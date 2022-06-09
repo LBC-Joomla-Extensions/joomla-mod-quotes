@@ -47,13 +47,13 @@ module.exports = {
                 { from: path.resolve(__dirname,"vendor"), to: "vendor" },
                 { from: "./src/index.html", to: "index.html" },
                 { from: "./src/helper.php", to: "helper.php" },
-                { from: "./src/mod_modBase.php", to: "mod_modBase.php" },
-                { from: "./src/mod_modBase.xml", to: "mod_modBase.xml" },                
+                { from: "./src/mod_quotes.php", to: "mod_quotes.php" },
+                { from: "./src/mod_quotes.xml", to: "mod_quotes.xml" },                
             ],
         }),
         new ZipPlugin({
             path : '../dist_zip',
-            filename : 'j3mod_base.zip'
+            filename : 'joomla_mod_quotes.zip'
         }),
     ],
 };

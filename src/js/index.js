@@ -1,5 +1,10 @@
 import '../styles/main.scss';
-import {foo, foo2} from './functions.js';
+import {prev, next, indexActivo, maxIndex, activarTimer, suspenderTimer, reanudarTimer } from './functions.js';
 
-window.foo = foo;
-window.foo2 = foo2;
+window.prev = prev;
+window.next = next;
+window.indexActivo = indexActivo;
+window.maxIndex = maxIndex;
+window.activarTimer = activarTimer;
+window.suspenderTimer = suspenderTimer;
+window.reanudarTimer = reanudarTimer;

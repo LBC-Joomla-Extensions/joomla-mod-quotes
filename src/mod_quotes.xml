@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.0" client="site" method="upgrade">
+    <name>Opiniones y Quotes</name>
+    <author>Luis BC</author>
+    <version>1.0.0</version>
+    <description>Un módulo para mostrar opiniones en modo slider con una imagen de fondo.</description>
+    <files>
+        <filename>mod_quotes.xml</filename>
+        <filename module="mod_quotes">mod_quotes.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>css/main.css</filename>
+        <filename>js/main.js</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+                <field 
+                    name="opiniones" 
+                    type="textarea"                     
+                    label="Opiniones" 
+                    description="Opiniones en formato { {opinion;;;autor}, ... }"
+                ></field>
+                <field 
+                    name="fondo" 
+                    type="imagelist"   
+                    directory="images"                   
+                    label="Imagen Fondo" 
+                    description="Imagen de fondo"
+                ></field>
+                <field 
+                    name="duracion" 
+                    type="number"                     
+                    label="Duracion" 
+                    description="Duración de una opinión en milisegundos"
+                ></field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

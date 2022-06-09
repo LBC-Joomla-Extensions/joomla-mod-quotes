@@ -8,13 +8,11 @@ require_once __DIR__ . "/vendor/autoload.php";
 
 use Dickinsonjl\Lorum\Lorum;
 
-class modBase{
+class modQuotes{
 
-    public static function lorem(){
-        $lorum = new Lorum();
-        $lorum->buildCache();
-
-        return $lorum->giveMeParagraph();
+    public static function getParams(&$params){
+        return $params;
     }
+    
 }
 ?>

@@ -5,3 +5,171 @@
 
 // 2. Importar componentes
 @import 'components';
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+#quotes-outer-wrapper{
+    position:relative;
+    width: 100%;
+    margin-top:4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.quotes-fondo-img{
+    position: relative;
+    top:0;
+    width: 100%;
+    object-fit: cover;
+}
+
+#quotes-inner-wrapper{
+    position: relative;
+    bottom: 0;
+    width:100%;
+    height: 100%;
+
+    min-height:13rem;
+    border-radius:50px;
+    
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    background-color:rgba(0,0,0,0);
+
+    margin-top:-1rem;
+
+}
+
+.quotes-inner-text{
+    width:100%;
+    
+    border-radius: 10%;
+    padding:2rem;
+    display: none;    
+
+    font-size:.7rem;
+
+    min-height:20rem; 
+}
+
+.quote-activo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;       
+    justify-content: center;
+}
+
+.quotes-inner-flecha-izq{
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 15px;
+    border-bottom-width: 15px;
+    border-right: 26px solid var(--main-color);
+
+    margin: .5rem;
+
+    border-radius:50%;
+}
+
+.quotes-inner-flecha-der{
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-bottom-width: 15px;
+    border-top-width: 15px;
+    border-left: 26px solid var(--main-color);
+
+    margin: .5rem;
+    border-radius:50%;
+}
+.quotes-text{
+    display: flex;        
+    text-align: justify;
+    font-weight: normal;
+    order:4;
+}
+
+.quotes-autor{    
+    text-align: center;
+    color:var(--main-color);    
+    margin:0.5rem;
+}
+
+.quotes-foto{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+@media (min-width:600px){
+    #quotes-inner-wrapper{
+        width: 90%;
+        margin-top:.25rem;
+        margin-bottom:.25rem;
+    }
+
+    .quotes-inner-text{
+        font-size:.9rem;
+        min-height:23rem; 
+    }
+}
+
+@media (min-width:700px){
+    .quotes-inner-text{
+        font-size:1rem;
+    }
+}
+
+@media (min-width:800px){
+    #quotes-inner-wrapper{
+        width:75%;
+        min-height: 25rem;
+    }
+    .quotes-inner-text{
+        font-size:1.2rem;
+        min-height:29rem; 
+    }
+
+    .quotes-inner-flecha-izq{
+        border-top-width: 30px;
+        border-bottom-width: 30px;
+        border-right: 52px solid var(--main-color);
+        margin:1rem;
+    }
+
+    .quotes-inner-flecha-der{
+        border-bottom-width: 30px;
+        border-top-width: 30px;
+        border-left: 52px solid var(--main-color);
+    }
+}
+
+@media (min-width:1000px){
+    .quotes-inner-text{
+        font-size:1.5rem;
+        min-height:32rem;
+    }
+}
+
+@media (min-width:1200px){
+    .quotes-inner-text{
+        font-size:2rem;
+        min-height:40rem;
+    }
+    
+    #quotes-inner-wrapper{
+        min-height:33rem;
+    }
+}
