@@ -1,5 +1,12 @@
 {
-    "require": {
-        "dickinsonjl/lorum": "^1.0"
+    "name": "lbc/joomla-mod-quotes",
+    "authors": [
+        {
+            "name": "Luis BC",
+            "email": "luinux81@gmail.com"
+        }
+    ],
+    "require":{
+        
     }
 }
